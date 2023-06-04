@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  background-color: #dcdada41;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+main {
+  background-color: #dcdadaa6;
+}
+
+header {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header img {
+  max-width: 60px;
+  transform: rotate(-10deg);
+}
+header strong {
+  font-size: 32px;
+  margin-left: 16px;
+  transform: rotate(1deg) translateY(10px);
+}
+
+/* task form */
+
+.task-form {
+  padding: 20px 0;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form input {
+  height: 42px;
+  background: #fff;
+  border: none;
+  padding: 6px 8px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 6px;
+  width: 60%;
+  min-width: 250px;
+}
+form button {
+  margin-left: 12px;
+  background: #fce11e;
+  padding: 6px 20px;
+  height: 42px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* task body */
+.task-body {
+  padding: 30px 0;
+}
+.task {
+  background: #fff;
+  min-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  box-shadow: 0 0px 3px 6px rgba(201, 199, 199, 0.116);
+}
+.task h3{
+  font-size: 22px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+.task .icons{
+  margin-left: 8px;
+}
+.task .icons box-icon{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  fill: rgb(163, 162, 162);
+}
+.task .icons box-icon.active{
+  fill: rgb(248, 13, 13);
+}
+
+.task-body .actions{
+  min-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+.task-body .actions button{
+  margin-left: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px 12px;
+  cursor: pointer;
+}
