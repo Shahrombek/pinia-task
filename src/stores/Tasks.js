@@ -6,10 +6,14 @@ export const useTasks = defineStore("tasks", {
       { id: 1, title: "Drink coffee", isFav: false },
       { id: 2, title: "Make a lunch", isFav: true },
     ],
+    editTask: { id: null, title: "", isFav: false },
   }),
   getters: {
     getFav() {
       return this.tasks.filter((t) => t.isFav);
+    },
+    getEditTasks() {
+      return this.editTask;
     },
   },
   actions: {
